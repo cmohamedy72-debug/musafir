@@ -1,36 +1,36 @@
-:root{--bg:#0e1124;--bg2:#151a33;--gold:#d9b46a;--cream:#efe3c8;--dim:rgba(239,227,200,.7);--line:rgba(217,180,106,.25)}
+:root{--ink:#141414;--sand:#EFE7DA;--sand2:#E4D9C6;--gold:#C9A04E;--mute:#6b645a}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--cream);font:17px/1.6 "Cormorant Garamond",Georgia,serif}
-a{color:var(--gold)}img,video{max-width:100%;display:block}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}
-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;max-width:980px;margin:0 auto}
-header a.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--gold);font-weight:700;letter-spacing:4px;font-size:20px}
-header a.brand img{width:44px}
-nav a{color:var(--dim);text-decoration:none;margin-left:18px;font-size:16px}
-.hero{text-align:center;padding:40px 0 30px;background:radial-gradient(ellipse at 50% 20%,#232a52 0,var(--bg) 70%)}
-.hero img.logo{width:min(300px,70vw);margin:0 auto}
-.ar{font-family:Amiri,serif;color:var(--gold);font-size:34px;margin:4px 0}
-h1{font-size:clamp(34px,6vw,54px);line-height:1.15;margin:18px 0 8px;font-weight:600}
-h1 em,h2 em{color:var(--gold);font-style:normal}
-.sub{color:var(--dim);font-size:20px;margin:0 auto;max-width:560px}
-.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:6px 18px;letter-spacing:3px;font-weight:700;font-size:14px;margin-top:22px}
-section{padding:46px 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(28px,4.5vw,40px);margin:0 0 18px;font-weight:600;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;align-items:center}
-.card{background:var(--bg2);border:1px solid var(--line);border-radius:22px;padding:22px}
-.card img{border-radius:14px}
-.cap{font-size:13px;letter-spacing:2px;color:var(--dim);text-align:center;margin-top:8px;text-transform:uppercase}
-ul.points{list-style:none;padding:0;margin:0}ul.points li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line);font-size:19px}
-ul.points li:before{content:"✦";position:absolute;left:4px;color:var(--gold)}
-.video{max-width:340px;margin:0 auto;border-radius:22px;overflow:hidden;border:1px solid var(--line)}
-.cta{text-align:center}
-.btn{display:inline-block;background:var(--gold);color:#1a1408;text-decoration:none;font-weight:700;padding:14px 28px;border-radius:14px;margin:8px;font-size:18px}
-.btn.ghost{background:none;color:var(--gold);border:1px solid var(--gold)}
-footer{border-top:1px solid var(--line);padding:30px 20px 50px;text-align:center;color:var(--dim);font-size:15px}
-footer a{color:var(--dim);margin:0 10px}
-.legal{max-width:760px}.legal h1{font-size:38px}.legal h2{text-align:left;font-size:26px;margin-top:34px}
-.legal p,.legal li{color:var(--cream)}.note{background:var(--bg2);border-left:3px solid var(--gold);padding:12px 16px;border-radius:8px;color:var(--dim)}
-@media(max-width:560px){nav{display:none}.ar{font-size:28px}}
-.eng{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.eng h3{color:var(--gold);margin:0 0 6px;font-size:22px}.eng p{margin:0;color:var(--dim)}
-details{border-bottom:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-size:20px;font-weight:600;list-style:none}summary::-webkit-details-marker{display:none}
-summary:before{content:"+";color:var(--gold);display:inline-block;width:24px}details[open] summary:before{content:"–"}details p{color:var(--dim);margin:8px 0 0 24px}
+body{margin:0;background:var(--sand);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}
+a{color:var(--ink)}img{max-width:100%;display:block}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.12;margin:0}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;max-width:960px;margin:0 auto}
+header a.brand img{height:36px}
+nav a{color:var(--mute);text-decoration:none;font-size:13px;letter-spacing:2px;margin-left:16px;text-transform:uppercase}
+.hero{padding:30px 22px 44px;text-align:center}
+.hero img{width:150px;margin:0 auto 22px}
+.hero h1{font-size:clamp(40px,7vw,58px)}h1 em,h2 em{font-style:normal;color:var(--gold)}
+.hero p{color:var(--mute);margin:16px auto 0;max-width:340px}
+.tag{display:inline-block;margin-top:22px;font-size:12px;letter-spacing:3px;border:1px solid var(--ink);padding:8px 16px;border-radius:99px}
+.photo{max-width:520px;margin:0 auto;border-radius:18px;overflow:hidden;aspect-ratio:1/1;background:#0b0f22}
+.photo img{width:100%;height:100%;object-fit:contain}
+.cap{text-align:center;font-size:11px;letter-spacing:2px;color:var(--mute);margin:10px 0 0;text-transform:uppercase}
+section{padding:46px 0 10px}
+h2{font-size:32px;margin-bottom:16px}
+.lead{color:var(--mute)}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--sand2);border-radius:14px;overflow:hidden;margin-top:14px}
+.specs div{background:var(--sand);padding:14px}.specs b{display:block;font-size:12px;letter-spacing:1.5px;color:var(--mute);font-weight:500;text-transform:uppercase}
+.eng{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.eng div{border-top:1px solid var(--ink);padding-top:12px}
+.eng h3{font-size:22px}.eng p{margin:4px 0 0;color:var(--mute);font-size:15px}
+.story{background:var(--ink);color:var(--sand);margin-top:46px;padding:46px 0}.story h2{color:var(--gold)}.story p{color:#d8cfbf}
+.ar{font-family:Amiri,serif;color:var(--gold);font-size:22px}
+details{border-bottom:1px solid var(--sand2);padding:14px 0}summary{cursor:pointer;font-weight:600;list-style:none}
+summary::-webkit-details-marker{display:none}summary:before{content:"+";color:var(--gold);display:inline-block;width:22px}
+details[open] summary:before{content:"–"}details p{color:var(--mute);margin:8px 0 0 22px}
+.cta{text-align:center;padding:46px 0}.btn{display:block;max-width:420px;margin:12px auto 0;background:var(--ink);color:var(--sand);text-decoration:none;padding:15px;border-radius:12px;font-weight:600}
+.btn.o{background:none;color:var(--ink);border:1px solid var(--ink)}
+footer{border-top:1px solid var(--sand2);padding:24px 22px 40px;text-align:center;font-size:13px;color:var(--mute)}
+footer a{color:var(--mute);margin:0 8px}
+.legal{padding-bottom:40px}.legal h1{font-size:40px;margin:20px 0}.legal h2{font-size:26px;margin:30px 0 8px}
+.note{background:var(--sand2);border-left:3px solid var(--gold);padding:12px 16px;border-radius:8px;color:var(--mute)}
+@media(max-width:480px){nav a{margin-left:10px;font-size:12px}}
