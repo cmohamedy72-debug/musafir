@@ -46,3 +46,6 @@ html[lang=ar] body{font-family:Amiri,serif;font-size:19px}html[lang=ar] h1,html[
 html[lang=ar] .trust,html[lang=ar] .cap,html[lang=ar] .tag,html[lang=ar] .specs b,html[lang=ar] nav a{letter-spacing:0}
 html[lang=ar] details p{margin:8px 22px 0 0}
 @media(max-width:480px){header nav{display:none}}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.offers div{background:var(--sand2);border-radius:16px;padding:18px 6px;text-align:center}
+.offers span{display:block;font-size:13px;color:var(--mute)}.offers b{display:block;font-family:"Cormorant Garamond",serif;font-size:28px;line-height:1.1;white-space:nowrap}
+.offers small{font-size:12px;color:var(--mute)}.offers .best{background:var(--ink);color:var(--sand)}.offers .best small,.offers .best span{color:var(--gold)}
