@@ -1,0 +1,8 @@
+{
+  // Réglages Cloudflare : le site Musâfir est un site statique (pages HTML).
+  "name": "musafir",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./"
+  }
+}
