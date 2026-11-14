@@ -1,3 +1,5 @@
 wrangler.jsonc
 .assetsignore
 .git
+src
+index.next.html
