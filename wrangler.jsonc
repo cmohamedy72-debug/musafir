@@ -1,8 +1,14 @@
 {
-  // Réglages Cloudflare : le site Musâfir est un site statique (pages HTML).
+  // Réglages Cloudflare : pages HTML servies telles quelles + un petit programme (src/worker.js)
+  // qui enregistre la liste d'attente dans un stockage KV (créé automatiquement au déploiement).
   "name": "musafir",
+  "main": "src/worker.js",
   "compatibility_date": "2025-09-01",
   "assets": {
-    "directory": "./"
-  }
+    "directory": "./",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    { "binding": "ATTENTE" }
+  ]
 }
