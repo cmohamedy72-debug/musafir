@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /insta/
+
+Sitemap: https://musafirofficiel.com/sitemap.xml
