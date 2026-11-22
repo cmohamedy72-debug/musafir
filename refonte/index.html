@@ -237,10 +237,12 @@ if(!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').
     <p class="kicker">Être prévenu</p>
     <h2>Soyez informé <em>en premier</em></h2>
     <p class="lead" style="max-width:none">Laissez votre adresse : nous vous écrirons une seule fois, le jour où les tapis arrivent.</p>
-    <form class="wl" onsubmit="return false">
-      <input type="email" placeholder="Votre adresse e-mail" aria-label="Adresse e-mail" required>
+    <form class="wl" id="wlf" novalidate>
+      <input type="text" name="site" id="wls" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+      <input type="email" id="wle" required autocomplete="email" placeholder="votre@email.com" aria-label="Adresse e-mail">
+      <label style="display:flex;gap:10px;align-items:flex-start;font-size:17px;line-height:1.5"><input type="checkbox" id="wlc" style="margin-top:6px;width:20px;height:20px;flex-shrink:0"><span>J'accepte de recevoir l'e-mail annonçant le lancement de Musâfir. Je peux me désinscrire à tout moment. Mon adresse ne sera jamais transmise à des tiers.</span></label>
       <button class="btn" type="submit">Me prévenir</button>
-      <p class="note">Formulaire non connecté pour l'instant. Aucune adresse n'est enregistrée.</p>
+      <p id="wlm" class="note" role="status" style="min-height:24px;font-weight:600"></p>
     </form>
   </div>
 </section>
@@ -264,5 +266,23 @@ if(!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').
   </div>
 </footer>
 
+<script>
+(function(){
+var M={fr:["Merci ! Vous serez informé dès l'arrivée des tapis.","Veuillez saisir une adresse e-mail valide.","Veuillez cocher la case pour confirmer votre accord.","Une erreur est survenue. Veuillez réessayer plus tard."]};
+var f=document.getElementById('wlf'); if(!f) return;
+var e=document.getElementById('wle'), c=document.getElementById('wlc'), m=document.getElementById('wlm'), h=document.getElementById('wls');
+f.addEventListener('submit', async function(ev){
+  ev.preventDefault();
+  var t=M.fr;
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e.value.trim())){m.textContent=t[1];return}
+  if(!c.checked){m.textContent=t[2];return}
+  try{
+    var r=await fetch('/api/attente',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:e.value.trim(),lang:'fr',consent:c.checked,site:h.value})});
+    if(!r.ok) throw 0;
+  }catch(_){ m.textContent=t[3]; return }
+  m.textContent=t[0]; f.querySelectorAll('input,button').forEach(function(x){x.style.display='none'});
+});
+})();
+</script>
 </body>
 </html>
