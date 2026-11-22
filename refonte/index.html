@@ -11,11 +11,11 @@
 :root{--ivoire:#F7F2E9;--sable:#E8D9C2;--brun:#30231C;--or:#B58B45;--blanc:#FFFCF6;--taupe:#827567}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--ivoire);color:var(--brun);font-family:Manrope,system-ui,sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+body{background:var(--ivoire);color:var(--brun);font-family:Manrope,system-ui,sans-serif;font-size:19px;line-height:1.7;overflow-x:hidden}
 h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;color:var(--brun)}
-h1{font-size:clamp(34px,8vw,56px)}
-h2{font-size:clamp(28px,6vw,40px);margin-bottom:14px}
-h3{font-size:22px;margin-bottom:6px}
+h1{font-size:clamp(40px,11vw,66px);line-height:1.1}
+h2{font-size:clamp(34px,9vw,50px);margin-bottom:16px;line-height:1.15}
+h3{font-size:clamp(24px,6vw,30px);margin-bottom:8px}
 p{color:var(--brun)}
 .muted{color:var(--taupe)}
 .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
@@ -25,28 +25,28 @@ header{position:sticky;top:0;z-index:10;background:var(--blanc);border-bottom:1p
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
 .brand{display:flex;align-items:center;gap:10px;font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:700;color:var(--brun);text-decoration:none}
 .brand img{height:30px;width:auto}
-nav a{font-size:14px;color:var(--brun);text-decoration:none;margin-left:18px}
-.btn{display:inline-block;background:var(--brun);color:var(--blanc);border-radius:12px;padding:14px 24px;font-weight:600;text-decoration:none;font-size:16px;border:0;cursor:pointer}
+nav a{font-size:17px;color:var(--brun);text-decoration:none;margin-left:18px}
+.btn{display:inline-block;background:var(--brun);color:var(--blanc);border-radius:14px;padding:18px 30px;font-weight:700;text-decoration:none;font-size:19px;border:0;cursor:pointer}
 .btn-ghost{background:transparent;color:var(--brun);border:1px solid var(--brun)}
 .hero{display:grid;gap:28px;align-items:center;padding-top:36px}
 .hero img{width:100%;border-radius:20px;display:block;aspect-ratio:4/5;object-fit:cover}
-.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);font-weight:600}
-.lead{font-size:18px;color:var(--brun);margin:14px 0 24px;max-width:460px}
+.kicker{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);font-weight:600}
+.lead{font-size:clamp(20px,5.2vw,23px);line-height:1.6;color:var(--brun);margin:14px 0 24px;max-width:460px}
 .cards{display:grid;gap:14px}
 .card{background:var(--blanc);border:1px solid var(--sable);border-radius:18px;padding:22px}
-.price{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:700}
+.price{font-family:"Cormorant Garamond",serif;font-size:44px;font-weight:700;line-height:1.1}
 .offres .card{display:flex;flex-direction:column;gap:6px}
-.gift{color:var(--or);font-weight:600;font-size:14px}
+.gift{color:var(--or);font-weight:700;font-size:17px}
 .specs{display:grid;gap:10px;margin-top:14px}
-.specs div{display:flex;justify-content:space-between;border-bottom:1px solid var(--sable);padding:10px 0;font-size:15px}
+.specs div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--sable);padding:12px 0;font-size:18px}
 .steps{display:grid;gap:12px;counter-reset:s}
-.steps li{list-style:none;background:var(--blanc);border:1px solid var(--sable);border-radius:14px;padding:14px 16px;font-size:15px}
-footer{background:var(--brun);color:var(--ivoire);padding:40px 0 60px;font-size:14px}
+.steps li{list-style:none;background:var(--blanc);border:1px solid var(--sable);border-radius:14px;padding:16px 18px;font-size:18px;line-height:1.6}
+footer{background:var(--brun);color:var(--ivoire);padding:44px 0 64px;font-size:17px}
 footer a{color:var(--ivoire)}
 .legal{margin-top:20px;display:flex;flex-wrap:wrap;gap:14px}
 form.wl{display:grid;gap:10px;margin-top:18px;max-width:460px}
-form.wl input{font:inherit;padding:14px;border-radius:12px;border:1px solid var(--sable);background:var(--blanc);color:var(--brun)}
-.note{font-size:13px;color:var(--taupe);margin-top:6px}
+form.wl input{font:inherit;font-size:19px;padding:18px;border-radius:12px;border:1px solid var(--sable);background:var(--blanc);color:var(--brun)}
+.note{font-size:16px;color:var(--taupe);margin-top:6px}
 @media(min-width:820px){
  .hero{grid-template-columns:1fr 1fr;padding-top:60px}
  .cards.g3{grid-template-columns:repeat(3,1fr)}
@@ -117,9 +117,9 @@ form.wl input{font:inherit;padding:14px;border-radius:12px;border:1px solid var(
     <p class="kicker">Offres</p>
     <h2>Choisissez votre <em>nombre</em></h2>
     <div class="cards g3 offres" style="margin-top:20px">
-      <div class="card"><h3>1 tapis</h3><span class="price">15,90 €</span><span class="muted">+ 5 € de livraison</span></div>
+      <div class="card" style="font-size:18px"><h3>1 tapis</h3><span class="price">15,90 €</span><span class="muted">+ 5 € de livraison</span></div>
       <div class="card" style="border-color:var(--or)"><h3>2 tapis</h3><span class="price">34,90 €</span><span class="muted">Livraison offerte</span><span class="gift">Un pour vous, un à offrir</span></div>
-      <div class="card"><h3>3 tapis</h3><span class="price">42 €</span><span class="muted">Livraison offerte</span></div>
+      <div class="card" style="font-size:18px"><h3>3 tapis</h3><span class="price">42 €</span><span class="muted">Livraison offerte</span></div>
     </div>
     <p class="note" style="margin-top:14px">Les commandes ouvriront à la réception du stock, mi-décembre. Paiement par carte, via Stripe.</p>
   </div>
@@ -145,10 +145,10 @@ form.wl input{font:inherit;padding:14px;border-radius:12px;border:1px solid var(
     <p class="kicker">Nos engagements</p>
     <h2>Ce que nous <em>faisons</em></h2>
     <div class="cards g4" style="margin-top:20px">
-      <div class="card"><h3>Qualité contrôlée</h3><p class="muted">Chaque tapis est contrôlé avant l'envoi.</p></div>
-      <div class="card"><h3>Informations claires</h3><p class="muted">Dimensions, poids et contenu indiqués tels qu'ils sont.</p></div>
-      <div class="card"><h3>Préparation soignée</h3><p class="muted">Chaque colis est préparé avec attention.</p></div>
-      <div class="card"><h3>Un interlocuteur réel</h3><p class="muted">Une personne répond à vos messages.</p></div>
+      <div class="card" style="font-size:18px"><h3>Qualité contrôlée</h3><p class="muted">Chaque tapis est contrôlé avant l'envoi.</p></div>
+      <div class="card" style="font-size:18px"><h3>Informations claires</h3><p class="muted">Dimensions, poids et contenu indiqués tels qu'ils sont.</p></div>
+      <div class="card" style="font-size:18px"><h3>Préparation soignée</h3><p class="muted">Chaque colis est préparé avec attention.</p></div>
+      <div class="card" style="font-size:18px"><h3>Un interlocuteur réel</h3><p class="muted">Une personne répond à vos messages.</p></div>
     </div>
   </div>
 </section>
@@ -160,10 +160,10 @@ form.wl input{font:inherit;padding:14px;border-radius:12px;border:1px solid var(
   <div class="wrap" style="max-width:760px">
     <p class="kicker">Questions fréquentes</p>
     <h2>Vos <em>questions</em></h2>
-    <details class="card" style="margin-top:14px"><summary><b>Quand sera-t-il disponible ?</b></summary><p style="margin-top:8px">À partir de mi-décembre, à la réception du stock. Les commandes ouvriront à ce moment-là.</p></details>
-    <details class="card" style="margin-top:10px"><summary><b>Comment payer ?</b></summary><p style="margin-top:8px">Par carte bancaire, en ligne, via le prestataire sécurisé Stripe.</p></details>
-    <details class="card" style="margin-top:10px"><summary><b>Où livrez-vous ?</b></summary><p style="margin-top:8px">En France continentale. Les frais et les délais sont affichés avant le paiement.</p></details>
-    <details class="card" style="margin-top:10px"><summary><b>Puis-je le renvoyer ?</b></summary><p style="margin-top:8px">Oui, vous avez 14 jours après réception pour changer d'avis. Le détail est dans nos <a href="../cgv.html">conditions de vente</a>.</p></details>
+    <details class="card" style="margin-top:14px"><summary style="font-size:20px;cursor:pointer"><b>Quand sera-t-il disponible ?</b></summary><p style="margin-top:8px">À partir de mi-décembre, à la réception du stock. Les commandes ouvriront à ce moment-là.</p></details>
+    <details class="card" style="margin-top:10px"><summary style="font-size:20px;cursor:pointer"><b>Comment payer ?</b></summary><p style="margin-top:8px">Par carte bancaire, en ligne, via le prestataire sécurisé Stripe.</p></details>
+    <details class="card" style="margin-top:10px"><summary style="font-size:20px;cursor:pointer"><b>Où livrez-vous ?</b></summary><p style="margin-top:8px">En France continentale. Les frais et les délais sont affichés avant le paiement.</p></details>
+    <details class="card" style="margin-top:10px"><summary style="font-size:20px;cursor:pointer"><b>Puis-je le renvoyer ?</b></summary><p style="margin-top:8px">Oui, vous avez 14 jours après réception pour changer d'avis. Le détail est dans nos <a href="../cgv.html">conditions de vente</a>.</p></details>
   </div>
 </section>
 
