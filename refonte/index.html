@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Musâfir · Le tapis de prière compact</title>
+<meta name="description" content="Musâfir : un tapis de prière compact, 65 × 110 cm, roulé dans une pochette qui se clipse à votre sac. Lancement mi-décembre.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ivoire:#F7F2E9;--sable:#E8D9C2;--brun:#30231C;--or:#B58B45;--blanc:#FFFCF6;--taupe:#827567}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivoire);color:var(--brun);font-family:Manrope,system-ui,sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;color:var(--brun)}
+h1{font-size:clamp(34px,8vw,56px)}
+h2{font-size:clamp(28px,6vw,40px);margin-bottom:14px}
+h3{font-size:22px;margin-bottom:6px}
+p{color:var(--brun)}
+.muted{color:var(--taupe)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.sep{height:1px;background:var(--sable);max-width:1100px;margin:0 auto}
+header{position:sticky;top:0;z-index:10;background:var(--blanc);border-bottom:1px solid var(--sable)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:700;color:var(--brun);text-decoration:none}
+.brand img{height:30px;width:auto}
+nav a{font-size:14px;color:var(--brun);text-decoration:none;margin-left:18px}
+.btn{display:inline-block;background:var(--brun);color:var(--blanc);border-radius:12px;padding:14px 24px;font-weight:600;text-decoration:none;font-size:16px;border:0;cursor:pointer}
+.btn-ghost{background:transparent;color:var(--brun);border:1px solid var(--brun)}
+.hero{display:grid;gap:28px;align-items:center;padding-top:36px}
+.hero img{width:100%;border-radius:20px;display:block;aspect-ratio:4/5;object-fit:cover}
+.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);font-weight:600}
+.lead{font-size:18px;color:var(--brun);margin:14px 0 24px;max-width:460px}
+.cards{display:grid;gap:14px}
+.card{background:var(--blanc);border:1px solid var(--sable);border-radius:18px;padding:22px}
+.price{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:700}
+.offres .card{display:flex;flex-direction:column;gap:6px}
+.gift{color:var(--or);font-weight:600;font-size:14px}
+.specs{display:grid;gap:10px;margin-top:14px}
+.specs div{display:flex;justify-content:space-between;border-bottom:1px solid var(--sable);padding:10px 0;font-size:15px}
+.steps{display:grid;gap:12px;counter-reset:s}
+.steps li{list-style:none;background:var(--blanc);border:1px solid var(--sable);border-radius:14px;padding:14px 16px;font-size:15px}
+footer{background:var(--brun);color:var(--ivoire);padding:40px 0 60px;font-size:14px}
+footer a{color:var(--ivoire)}
+.legal{margin-top:20px;display:flex;flex-wrap:wrap;gap:14px}
+form.wl{display:grid;gap:10px;margin-top:18px;max-width:460px}
+form.wl input{font:inherit;padding:14px;border-radius:12px;border:1px solid var(--sable);background:var(--blanc);color:var(--brun)}
+.note{font-size:13px;color:var(--taupe);margin-top:6px}
+@media(min-width:820px){
+ .hero{grid-template-columns:1fr 1fr;padding-top:60px}
+ .cards.g3{grid-template-columns:repeat(3,1fr)}
+ .cards.g2{grid-template-columns:repeat(2,1fr)}
+ .cards.g4{grid-template-columns:repeat(4,1fr)}
+ .prod{grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+}
+@media(max-width:819px){.cards.g4{grid-template-columns:1fr 1fr}.cards.g3,.cards.g2{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#"><img src="img/logo-noir.png" alt="">Musâfir</a>
+    <nav><a href="#produit">Le tapis</a><a href="#offres">Offres</a><a href="#histoire">Notre histoire</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<section style="padding-top:0">
+  <div class="wrap hero">
+    <img src="img/produit.png" alt="Le tapis de prière Musâfir, beige sable, roulé dans sa pochette">
+    <div>
+      <p class="kicker">Tapis de prière de voyage</p>
+      <h1>Toujours en route.<br><em style="color:var(--or)">Jamais sans votre prière.</em></h1>
+      <p class="lead">Un tapis fin de 65 × 110 cm, roulé dans une pochette qui se clipse à votre sac, au bureau comme en voyage.</p>
+      <a class="btn" href="#produit">Découvrir le tapis</a>
+      <p class="note" style="margin-top:14px">Lancement mi-décembre. Inscrivez-vous pour être prévenu en premier.</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section id="produit">
+  <div class="wrap prod">
+    <div>
+      <p class="kicker">Le tapis</p>
+      <h2>Beige sable, <em>uni</em></h2>
+      <p class="lead" style="max-width:none">Un beige sable doux et sobre. Le logo noir est sur le rabat de la pochette.</p>
+      <div class="specs">
+        <div><span>Dimensions</span><span>65 × 110 cm</span></div>
+        <div><span>Roulé</span><span>17,5 cm</span></div>
+        <div><span>Poids</span><span>91 g</span></div>
+        <div><span>Couleur</span><span>Beige sable uni</span></div>
+        <div><span>Fermeture</span><span>2 boutons pression</span></div>
+        <div><span>Livré avec</span><span>Pochette + mousqueton</span></div>
+      </div>
+      <p class="note" style="margin-top:12px">Matière : à confirmer avec la fiche de votre fournisseur avant publication.</p>
+    </div>
+    <div>
+      <ol class="steps" style="margin-top:0">
+        <li><b>1. Dépliez le tapis.</b> Format 65 × 110 cm.</li>
+        <li><b>2. Pliez-le en trois.</b> Le haut et le bas vers le centre.</li>
+        <li><b>3. Roulez-le</b> vers le rabat.</li>
+        <li><b>4. Fermez le rabat</b> et les deux boutons pression.</li>
+        <li><b>5. Clipsez la pochette</b> à votre sac ou à votre ceinture.</li>
+      </ol>
+      <p class="note">Les photos réelles seront ajoutées à la réception du stock.</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section id="offres">
+  <div class="wrap">
+    <p class="kicker">Offres</p>
+    <h2>Choisissez votre <em>nombre</em></h2>
+    <div class="cards g3 offres" style="margin-top:20px">
+      <div class="card"><h3>1 tapis</h3><span class="price">15,90 €</span><span class="muted">+ 5 € de livraison</span></div>
+      <div class="card" style="border-color:var(--or)"><h3>2 tapis</h3><span class="price">34,90 €</span><span class="muted">Livraison offerte</span><span class="gift">Un pour vous, un à offrir</span></div>
+      <div class="card"><h3>3 tapis</h3><span class="price">42 €</span><span class="muted">Livraison offerte</span></div>
+    </div>
+    <p class="note" style="margin-top:14px">Les commandes ouvriront à la réception du stock, mi-décembre. Paiement par carte, via Stripe.</p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section id="histoire">
+  <div class="wrap" style="max-width:720px">
+    <p class="kicker">Notre histoire</p>
+    <h2>Née d'une idée <em>simple</em></h2>
+    <p class="lead" style="max-width:none">En déplacement, au travail ou en voyage, il n'est pas toujours facile d'avoir un tapis de prière à portée de main.</p>
+    <p class="lead" style="max-width:none">C'est de ce constat qu'est née Musâfir : un tapis léger, compact et facile à transporter, pensé pour accompagner vos déplacements.</p>
+    <p class="lead" style="max-width:none">Derrière Musâfir, il y a une personne, une idée et une volonté : proposer un produit soigneusement sélectionné, présenté avec transparence.</p>
+    <p style="margin-top:20px"><b>Mohamed, fondateur</b></p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Nos engagements</p>
+    <h2>Ce que nous <em>faisons</em></h2>
+    <div class="cards g4" style="margin-top:20px">
+      <div class="card"><h3>Qualité contrôlée</h3><p class="muted">Chaque tapis est contrôlé avant l'envoi.</p></div>
+      <div class="card"><h3>Informations claires</h3><p class="muted">Dimensions, poids et contenu indiqués tels qu'ils sont.</p></div>
+      <div class="card"><h3>Préparation soignée</h3><p class="muted">Chaque colis est préparé avec attention.</p></div>
+      <div class="card"><h3>Un interlocuteur réel</h3><p class="muted">Une personne répond à vos messages.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="kicker">Être prévenu</p>
+    <h2>Soyez informé <em>en premier</em></h2>
+    <p class="lead" style="max-width:none">Laissez votre adresse : nous vous écrirons une seule fois, le jour où les tapis arrivent.</p>
+    <form class="wl" onsubmit="return false">
+      <input type="email" placeholder="Votre adresse e-mail" aria-label="Adresse e-mail" required>
+      <button class="btn" type="submit">Me prévenir</button>
+      <p class="note">Formulaire non connecté pour l'instant. Aucune adresse n'est enregistrée.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="color:var(--ivoire)">Musâfir · مُسَافِر</div>
+    <p style="margin-top:8px">Le voyageur n'oublie pas sa destination.</p>
+    <div class="legal">
+      <a href="../mentions-legales.html">Mentions légales</a>
+      <a href="../cgv.html">Conditions de vente</a>
+      <a href="../confidentialite.html">Confidentialité</a>
+    </div>
+    <p style="margin-top:20px;opacity:.7">© 2026 Musâfir</p>
+  </div>
+</footer>
+
+</body>
+</html>
