@@ -91,6 +91,8 @@ details.legal p{font-size:14px;color:var(--mute)}
 .visual{position:relative;aspect-ratio:4/5;border-radius:28px;background:linear-gradient(170deg,#E9CFA4,#C99A62);overflow:hidden;display:flex;align-items:center;justify-content:center}
 .visual .ph{position:absolute;inset:auto 16px 16px 16px;background:var(--paper);border-radius:14px;padding:12px 14px;font-size:13px;color:var(--brown)}
 .visual .tag{position:absolute;top:18px;left:18px;background:var(--paper);border-radius:20px;padding:6px 12px;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.visual.has-img{background:#fff}
+.visual.has-img img{width:100%;height:100%;object-fit:contain;padding:10% 0 16%;transform:scale(1.18);mix-blend-mode:multiply}
 .visual .mock{width:44%;aspect-ratio:1/2.1;border-radius:14px;background:linear-gradient(180deg,#8f5d3f,#5b3a26);box-shadow:0 18px 40px #2b1d1455}
 @media (max-width:820px){.hero{grid-template-columns:1fr;padding-top:32px}}
 
@@ -261,10 +263,10 @@ footer a{display:block;color:var(--mute);text-decoration:none;margin:0 0 6px}
         <span>Livraison en France métropolitaine</span>
       </div>
     </div>
-    <div class="visual" role="img" aria-label="Emplacement pour la photo du tapis Musâfir">
+    <div class="visual has-img">
       <span class="tag">Illustration</span>
-      <div class="mock"></div>
-      <div class="ph">Photo réelle du tapis à la réception du stock.</div>
+      <img src="photos/carte-sahara.jpg" alt="Tapis de prière Musâfir beige déplié à côté de sa pochette roulée avec mousqueton (illustration)" width="1904" height="1280" fetchpriority="high">
+      <div class="ph">Illustration · photos réelles à la réception du stock</div>
     </div>
   </div>
 </main>
